@@ -2,5 +2,5 @@ tweepy==3.10.0
 mecab-python3==1.0.3
 unidic-lite
 wordcloud==1.8.1
-streamlit==0.79.0
+streamlit==0.88.0
 matplotlib
