@@ -7,10 +7,10 @@ import streamlit as st
 #検索ワードを含むツイートを100件取得
 def get_tweet(key_word):
     # APIの秘密鍵
-    CONSUMER_KEY = st.Secrets["CONSUMER_KEY"]
-    CONSUMER_SECRET = st.Secrets["CONSUMER_SECRET"]
-    ACCESS_TOKEN_KEY = st.Secrets["ACCESS_TOKEN_KEY"]
-    ACCESS_TOKEN_SECRET = st.Secrets["ACCESS_TOKEN_SECRET"]
+    CONSUMER_KEY = st.secrets["CONSUMER_KEY"]
+    CONSUMER_SECRET = st.secrets["CONSUMER_SECRET"]
+    ACCESS_TOKEN_KEY = st.secrets["ACCESS_TOKEN_KEY"]
+    ACCESS_TOKEN_SECRET = st.secrets["ACCESS_TOKEN_SECRET"]
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_TOKEN_KEY, ACCESS_TOKEN_SECRET)
